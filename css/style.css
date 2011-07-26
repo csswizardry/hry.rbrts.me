@@ -6,8 +6,8 @@
 Author:             Harry Roberts
 Twitter:            @csswizardry
 Author URL:         csswizardry.com
-Version:            1.0
-Date:               25 July 2011
+Version:            1.0.1
+Date:               26 July 2011
 
 Copyright 2011 Harry Roberts
 */
@@ -182,7 +182,7 @@ article > :last-child{
 	margin-right:1.5em; /* 24px */
 }
 
-/* If we know the background is dark let's move the background image to give us a lighter logo. */
+/* If we know the page's background is dark let's move the background image to give us a lighter logo. */
 #bg-3 #logo,
 #bg-4 #logo	{ background-position:left bottom; }
 
@@ -413,6 +413,11 @@ dt{
 .accessibility{
 	position:absolute;
 	left:-9999px;
+}
+/* Hide things to the right for right-to-left languages. */
+html[dir='rtl'] .accessibility{
+	left:auto;
+	right:-9999px;
 }
 ::selection			{ color:#fff; background:#597a8f; }
 ::-moz-selection	{ color:#fff; background:#597a8f; }
