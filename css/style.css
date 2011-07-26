@@ -111,7 +111,7 @@ html{
 
 body{
 	padding:5%;
-	background:url(../img/css/dot.gif) fixed; /* Lay a one pixel dot over every other pixel so as to lessen the visible effects of stretched and pixelated background images. */
+	background:url(/img/css/dot.gif) fixed; /* Lay a one pixel dot over every other pixel so as to lessen the visible effects of stretched and pixelated background images. */
 }
 
 /* Fluid width, three-col wrapper. */
@@ -388,7 +388,7 @@ dt{
 }
 #logo,
 #social a{
-	background-image:url(../img/css/sprite.png);
+	background-image:url(/img/css/sprite.png);
 }
 .tag-list,
 #images,

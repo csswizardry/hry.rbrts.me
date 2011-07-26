@@ -7,10 +7,10 @@
 
 	<title>Harry Roberts; web designer and developer, type nerd and trials rider.</title>
 
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="/css/style.css" />
 
-	<link rel="shortcut icon" href="icon.png" />
-	<link rel="apple-touch-icon-precomposed" href="icon.png" />
+	<link rel="shortcut icon" href="/icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/icon.png" />
 	
 	<script type="text/javascript" src="http://use.typekit.com/ibv5xmv.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -41,7 +41,7 @@
 		<h1 class="accessibility">Harry Roberts, web designer and developer</h1>
 
 		<article class="intro">
-			<a href="#" id="logo"><img src="img/content/logo.png" alt="Harry Roberts logo" /></a>
+			<a href="/" id="logo"><img src="img/content/logo.png" alt="Harry Roberts logo" /></a>
 			<p class="tagline">Web developer and type nerd<span class="accessibility"> from Leeds, UK</span></p>
 		</article>
 
