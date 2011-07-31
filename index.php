@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
-	<title>Harry Roberts; web designer and developer, type nerd and trials rider.</title>
+	<title>hry.rbrts.me&mdash;Harry Roberts; web designer and developer, type nerd and trials rider.</title>
 
 	<link rel="stylesheet" href="/css/style.css" />
 

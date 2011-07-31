@@ -260,7 +260,7 @@ a:focus{
 	font:0.625em/2.4 "Helvetica Neue", Arial, sans-serif; /* 10px with a 24px line-height. */
 	text-transform:uppercase;
 	color:#fff;
-	line-height:100px;
+	line-height:100px; /* Same height as the logo. */
 	white-space:nowrap;
 }
 
