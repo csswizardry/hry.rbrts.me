@@ -1,16 +1,9 @@
 CACHE MANIFEST
 
-#version 2.0
+#version 3.0
 
 NETWORK:
-http://farm5.static.flickr.com/4005/4706825697_c0367e6dee_b.jpg
-http://farm3.static.flickr.com/2741/4281699291_777192cd9f_b.jpg
-http://farm5.static.flickr.com/4017/4717107886_dcc1270a65_b.jpg
-http://farm5.static.flickr.com/4116/4877345244_6cf40b2d42_b.jpg
-http://farm5.static.flickr.com/4005/4706825697_c0367e6dee_z.jpg
-http://farm3.static.flickr.com/2741/4281699291_777192cd9f_z.jpg
-http://farm5.static.flickr.com/4017/4717107886_dcc1270a65_z.jpg
-http://farm5.static.flickr.com/4116/4877345244_6cf40b2d42_z.jpg
+*
 
 CACHE:
 /icon.png
