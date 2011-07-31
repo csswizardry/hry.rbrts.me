@@ -164,7 +164,7 @@
 
 		<article class="colophon">
 			<h2>Colophon</h2>
-			<p>This hub-site is built with HTML(5) and CSS(3); the source is available on <a href="https://github.com/csswizardry/hry.rbrts.me">GitHub</a> and the idea for it was born from seeing <a href="http://www.antoniocarusone.com/">Antonio Carusone&rsquo;s beautiful personal page</a>. The logo was designed by <a href="http://twitter.com/WengersToyBus">Bryan James</a> and all photography is by <a href="http://twitter.com/suzehaworth">Suzanna Haworth</a>. Hosting is provided by <a href="http://twitter.com/dan_bentley">Dan Bentley</a>.</p>
+			<p>This hub-site is &copy; Harry Roberts <?= date("Y") ?>. It is built with HTML(5) and CSS(3); the source is available on <a href="https://github.com/csswizardry/hry.rbrts.me">GitHub</a> (poke through, please don&rsquo;t steal) and the idea for it was born from seeing <a href="http://www.antoniocarusone.com/">Antonio Carusone&rsquo;s beautiful personal page</a>. The logo was designed by <a href="http://twitter.com/WengersToyBus">Bryan James</a> and all photography is by <a href="http://twitter.com/suzehaworth">Suzanna Haworth</a>. Hosting is provided by <a href="http://twitter.com/dan_bentley">Dan Bentley</a>.</p>
 			
 			<h3>Background images</h3>
 			<p>All background images are of me and taken by Suzanna Haworth.</p>
