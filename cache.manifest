@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-#version 3.0
+#version 4.0
 
 NETWORK:
 *
@@ -8,6 +8,7 @@ NETWORK:
 CACHE:
 /icon.png
 /css/style.css
+/img/css/dot.gif
 /img/css/sprite.png
 /img/content/logo.png
 /img/content/projects/inuit.css.gif
