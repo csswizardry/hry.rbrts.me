@@ -211,7 +211,7 @@ However, as we're using the power of sprites we need to hide the <img /> from vi
 #logo img{
 	display:block;
 	opacity:0;
-	filter:alpha(opacity = 1);
+	filter:alpha(opacity = 0); /* For IE, y'know... */
 }
 
 
