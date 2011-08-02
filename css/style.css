@@ -6,10 +6,23 @@
 Author:             Harry Roberts
 Twitter:            @csswizardry
 Author URL:         csswizardry.com
-Version:            1.0.1
-Date:               26 July 2011
+Version:            1.1
+Date:               02 Aug 2011
 
 Copyright 2011 Harry Roberts
+*/
+
+
+
+
+
+/*------------------------------------*\
+	NOTES
+\*------------------------------------*/
+/*
+PADDINGS
+	padding-bottom is used as opposed to margin-bottom. This is a little unorthodox (read; nasty) but it is to combat this odd WebKit quirk: https://twitter.com/csswizardry/status/97993259254685696
+	Once WebKit gets its act together I will replace/reinstate all instances of padding-bottom with margin-bottom.
 */
 
 
@@ -150,9 +163,9 @@ article{
 	border-radius:2px;
 }
 
-/* Remove the margin-bottom from the last child in an article to remove the compounding effect of child-margins plus parent-paddings. */
+/* Remove the padding-bottom from the last child in an article to remove the compounding effect of child-paddings plus parent-paddings. */
 article > :last-child{
-	margin-bottom:0;
+	padding-bottom:0;
 }
 
 /* The intro (first) article has no background and thus requires no paddings etc. */
@@ -212,12 +225,14 @@ However, as we're using the power of sprites we need to hide the <img /> from vi
 h2{
 	font-size:1.25em; /* 20px */
 	line-height:1.2; /* 24px */
-	margin-bottom:1.2em; /* 24px */
+	/*margin-bottom:1.2em; /* 24px */
+	padding-bottom:1.2em; /* 24px */
 }
 h3{
 	font-size:1.125em; /* 18px */
 	line-height:1.333; /* 24px */
-	margin-bottom:1.333em; /* 24px */
+	/*margin-bottom:1.333em; /* 24px */
+	padding-bottom:1.333em; /* 24px */
 }
 
 /*--- LINKS ---*/
@@ -278,7 +293,8 @@ ul ul,
 ul ol,
 ol ol,
 ol ul{
-	margin-bottom:0;
+	/*margin-bottom:0;*/
+	padding-bottom:0;
 }
 dd{
 	margin-left:1.5em; /* 24px */
@@ -329,7 +345,8 @@ dd{
 
 /* Projects */
 #projects h3{
-	margin:0;
+	/*margin:0;*/
+	padding:0;
 }
 #projects a{
 	display:block;
@@ -377,14 +394,15 @@ img{
 /*
 Rather than writing properties over and over and repeating code we can simply tether selectors to one rule. This is pretty much having variables in CSS (update the colour once and everything gets the changes).
 */
-h1,h2,h3,h4,h5,h6,a,a:hover{
+h1,h2,h3,h4,h5,h6,a,a:hover,.go,a:hover .go{
 	color:#597a8f;
 }
 p,
 ul,
 ol,
 dl{
-	margin-bottom:1.5em; /* 24px */
+	/*margin-bottom:1.5em; /* 24px */
+	padding-bottom:1.5em; /* 24px */
 }
 b,
 strong,
