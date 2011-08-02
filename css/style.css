@@ -180,6 +180,11 @@ article > :last-child{
 	border:none;
 	float:left;
 	margin-right:1.5em; /* 24px */
+	
+	/* Remove transitions to stop odd behaviour on window-resize. */
+	-moz-transition:none;
+	-webkit-transition:none;
+	transition:none;
 }
 
 /* If we know the page's background is dark let's move the background image to give us a lighter logo. */
