@@ -78,6 +78,21 @@
 		</article>
 
 		<article>
+			<h2>Writings</h2>
+			<p>Handpicked articles of mine&hellip;</p>
+			
+			<ul>
+				<li><a href="http://coding.smashingmagazine.com/2011/08/26/writing-css-for-others/">Writing CSS for others<small>&mdash;Smashing Magazine</small></a></li>
+				<li><a href="http://coding.smashingmagazine.com/2011/03/14/technical-web-typography-guidelines-and-techniques/">Technical Type Tips<small>&mdash;Smashing Magazine</small></a></li>
+				<li><a href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">Your logo is an image, not a <code>&lt;h1&gt;</code></a> and <a href="http://csswizardry.com/2011/08/more-logo-markup-tips/">More logo markup tips</a></li>
+				<li><a href="http://csswizardry.com/2011/01/html5-and-text-level-semantics/">HTML(5) and text-level semantics</a></li>
+				<li><a href="http://csswizardry.com/2011/06/namespacing-fragment-identifiers/">Namespacing fragment identifiers</a></li>
+				<li><a href="http://csswizardry.com/2011/08/building-better-grid-systems/">Building better grid systems</a></li>
+			</ul>
+			
+		</article>
+
+		<article>
 			<h2>Out and about</h2>
 			<p>Follow/stalk me on the following:</p>
 			

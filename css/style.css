@@ -371,6 +371,9 @@ abbr{
 	border-bottom:1px dotted #333;
 	border-color:inherit;
 }
+code{
+	font:1em/1.5 "Inconsolata","Monaco","Consolas","Courier New",Courier,monospace;
+}
 
 
 
