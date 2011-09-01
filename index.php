@@ -5,7 +5,7 @@
 	$bgImages = 4;
 	
 	// See if someone has set a query string to permalink a specific background image, check it is valid.
-	if(isset($_GET['bg']) && $_GET['bg'] != '' && $_GET['bg'] <= $bgImages){
+	if(isset($_GET['bg']) && $_GET['bg'] != '' && is_numeric($_GET['bg']) && $_GET['bg'] <= $bgImages){
 		$bg = $_GET['bg'];
 	}
 	// If not, randomly assign our own background image.
