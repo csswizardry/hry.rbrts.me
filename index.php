@@ -1,5 +1,21 @@
+<?
+	
+	// Set up the amount of possible background images we have.
+	// Feels wrong hard-coding it, but I'm not a PHP dev.
+	$bgImages = 4;
+	
+	// See if someone has set a query string to permalink a specific background image, check it is valid.
+	if(isset($_GET['bg']) && $_GET['bg'] != '' && $_GET['bg'] <= $bgImages){
+		$bg = $_GET['bg'];
+	}
+	// If not, randomly assign our own background image.
+	else{
+		$bg = rand(1,$bgImages);
+	}
+	
+?>
 <!DOCTYPE html>
-<html lang="en" id="bg-<?= rand(1,4); ?>">
+<html lang="en" id="bg-<?= $bg ?>">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
