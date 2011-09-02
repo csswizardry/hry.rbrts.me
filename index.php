@@ -5,11 +5,12 @@
 	$bgImages = 4;
 	
 	// See if someone has set a query string to permalink a specific background image, check it is valid.
-	if(isset($_GET['bg']) && $_GET['bg'] != '' && is_numeric($_GET['bg']) && $_GET['bg'] <= $bgImages){
-		$bg = $_GET['bg'];
-	}
-	// If not, randomly assign our own background image.
-	else{
+	
+	// first of all let's sanitise any input or default to out-of-range if none present
+	$bg = isset($_GET['bg']) ? intval($_GET['bg']) : 0;
+	
+	// we know $bg is an int one way or the other, so check it's in range and randomise if not
+	if ($bg < 1 || $bg > $bgImages) {
 		$bg = rand(1,$bgImages);
 	}
 	
