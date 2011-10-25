@@ -6,8 +6,8 @@
 Author:             Harry Roberts
 Twitter:            @csswizardry
 Author URL:         csswizardry.com
-Version:            1.1
-Date:               02 Aug 2011
+Version:            1.2
+Date:               25 Oct 2011
 
 Copyright 2011 Harry Roberts
 */
@@ -17,12 +17,19 @@ Copyright 2011 Harry Roberts
 
 
 /*------------------------------------*\
-	NOTES
+	CONTENTS
 \*------------------------------------*/
 /*
-PADDINGS
-	padding-bottom is used as opposed to margin-bottom. This is a little unorthodox (read; nasty) but it is to combat this odd WebKit quirk: https://twitter.com/csswizardry/status/97993259254685696
-	Once WebKit gets its act together I will replace/reinstate all instances of padding-bottom with margin-bottom.
+RESET
+CLEARFIX
+SHARED
+MAIN
+ARTICLES
+LOGO
+TYPE
+IMAGES
+MISC
+RESPONSIVE
 */
 
 
@@ -30,14 +37,17 @@ PADDINGS
 
 
 /*------------------------------------*\
-	RESET
+	$RESET
 \*------------------------------------*/
+/*
+A more considered reset; more of a restart...
+*/
 html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-a,abbr,acronym,address,big,cite,code,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,
+a,abbr,address,cite,code,
 del,dfn,em,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,
-b,u,i,center,
+small,strong,sub,sup,tt,var,
+b,u,i,
 dl,dt,dd,ol,ul,li,
 fieldset,form,label,legend,
 table,caption,tbody,tfoot,thead,tr,th,td,
@@ -49,34 +59,59 @@ time,mark,audio,video{
 }
 article,aside,details,figcaption,figure,footer,
 header,hgroup,menu,nav,section{
-	display: block;
+	display:block;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
 }
 table{
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img{
-	border:0;
+strong,b,mark{
+	font-weight:bold;
+	font-style:inherit;
 }
-address,caption,cite,dfn,th,var{
-	font-style:normal;
-	font-weight:normal;
+em,i,cite,q,address,dfn,var{
+	font-style:italic;
+	font-weight:inherit;
 }
-caption,th{
-	text-align:left;
+abbr[title],dfn[title]{
+	cursor:help;
+	border-bottom:1px dotted;
 }
-h1,h2,h3,h4,h5,h6{
-	font-size:100%;
-	font-weight:normal;
+ins{
+	border-bottom:1px solid;
 }
-q:before,q:after{
-	content:'';
+a,u,ins{
+	text-decoration:none;
 }
-abbr,acronym{
-	border:0;
+del,s{
+	text-decoration:line-through;
+}
+pre,code,samp,kbd{
+	font-family:monospace;
+}
+small{
+	font-size:0.75em;
+}
+img{
+	border:none;
+	font-style:italic;
+}
+input,
+select,option,optgroup,
+textarea{
+	font:inherit;
 }
 
-/*--- CLEARFIX ---*/
+
+
+
+
+/*------------------------------------*\
+	$CLEARFIX
+\*------------------------------------*/
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */
 /* For modern browsers */
 .cf:before,
@@ -99,7 +134,50 @@ abbr,acronym{
 
 
 /*------------------------------------*\
-	MAIN
+	$SHARED
+\*------------------------------------*/
+/*
+Rather than writing properties over and over and repeating code we can simply tether selectors to one rule. This is pretty much having variables in CSS (update the colour once and everything gets the changes).
+*/
+h1,h2,h3,h4,h5,h6,a,a:hover,.go,a:hover .go{
+	color:#597a8f;
+}
+h1,h2,h3,h4,h5,h6,
+article,
+p,
+ul,
+ol,
+dl{
+	margin-bottom:24px;
+	margin-bottom:1.5rem; /* 24px */
+}
+b,
+strong,
+dt{
+	font-weight:700;
+}
+.logo,
+.social a{
+	background-image:url(/img/css/sprite.png);
+}
+.tag-list,
+.images,
+.social,
+.projects{
+	list-style:none;
+}
+.tag-list,
+.images,
+.projects{
+	margin-left:0;
+}
+
+
+
+
+
+/*------------------------------------*\
+	$MAIN
 \*------------------------------------*/
 html{
 	font:400 1em/1.5 skolar, Cambria, Georgia, "Times New Roman", serif; /* 16px with 24px line-height. 24px is therefore my magic number and will define paddings, margins and other spacing. Look out for it later on! */
@@ -117,10 +195,11 @@ html{
 }
 
 /* Grab some nice big background images from Flickr */
-#bg-1	{ background-image:url(http://farm5.static.flickr.com/4005/4706825697_c0367e6dee_b.jpg); }
-#bg-2	{ background-image:url(http://farm3.static.flickr.com/2741/4281699291_777192cd9f_b.jpg); }
-#bg-3	{ background-image:url(http://farm5.static.flickr.com/4017/4717107886_dcc1270a65_b.jpg); }
-#bg-4	{ background-image:url(http://farm5.static.flickr.com/4116/4877345244_6cf40b2d42_b.jpg); }
+.bg-1	{ background-image:url(http://farm5.static.flickr.com/4005/4706825697_c0367e6dee_b.jpg); }
+.bg-2	{ background-image:url(http://farm3.static.flickr.com/2741/4281699291_777192cd9f_b.jpg); }
+.bg-3	{ background-image:url(http://farm5.static.flickr.com/4017/4717107886_dcc1270a65_b.jpg); }
+.bg-4	{ background-image:url(http://farm5.static.flickr.com/4116/4877345244_6cf40b2d42_b.jpg); }
+.bg-5	{ background-image:url(http://farm7.static.flickr.com/6050/6250747475_bc9f5069a4_b.jpg); }
 
 body{
 	padding:5%;
@@ -128,8 +207,9 @@ body{
 }
 
 /* Fluid width, three-col wrapper. */
-#page{
+.page{
 	max-width:1200px;
+    
 	-moz-column-count:3;
 	-moz-column-gap:1.5em; /* 24px */
 	-webkit-column-count:3;
@@ -143,17 +223,16 @@ body{
 
 
 /*------------------------------------*\
-	ARTICLES
+	$ARTICLES
 \*------------------------------------*/
 /*
 Contain each section of the page in an article.
 */
 article{
 	display:inline-block;
-	background:#fff;
+	background-color:#fff;
 	width:87.5%;
 	padding:6.25%; /* 24px (at 100%) */
-	margin-bottom:1.5em; /* 24px */
 	
 	-moz-box-shadow:5px 5px 0 rgba(0,0,0,0.2);
 	-webkit-box-shadow:5px 5px 0 rgba(0,0,0,0.2);
@@ -163,9 +242,9 @@ article{
 	border-radius:2px;
 }
 
-/* Remove the padding-bottom from the last child in an article to remove the compounding effect of child-paddings plus parent-paddings. */
+/* Remove the padding-bottom from the last child in an article to remove the compounding effect of child-margins plus parent-paddings. */
 article > :last-child{
-	padding-bottom:0;
+	margin-bottom:0;
 }
 
 /* The intro (first) article has no background and thus requires no paddings etc. */
@@ -184,9 +263,9 @@ article > :last-child{
 
 
 /*------------------------------------*\
-	LOGO
+	$LOGO
 \*------------------------------------*/
-#logo{
+.logo{
 	display:block;
 	width:100px;
 	height:100px;
@@ -201,14 +280,14 @@ article > :last-child{
 }
 
 /* If we know the page's background is dark let's move the background image to give us a lighter logo. */
-#bg-3 #logo,
-#bg-4 #logo	{ background-position:left bottom; }
+.bg-3 .logo,
+.bg-4 .logo	{ background-position:left bottom; }
 
 /*
 Our logo should be an <img /> as per http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/
 However, as we're using the power of sprites we need to hide the <img /> from view. We could hide it off-screen but if we remove its opacity entirely a user can still interact with it when right-clicking.
 */
-#logo img{
+.logo img{
 	display:block;
 	opacity:0;
 	filter:alpha(opacity = 0); /* For IE, y'know... */
@@ -219,20 +298,19 @@ However, as we're using the power of sprites we need to hide the <img /> from vi
 
 
 /*------------------------------------*\
-	TYPE
+	$TYPE
 \*------------------------------------*/
 /*--- HEADINGS ---*/
+h1,h2,h3,h4,h5,h6{
+    font-weight:400;
+}
 h2{
 	font-size:1.25em; /* 20px */
 	line-height:1.2; /* 24px */
-	/*margin-bottom:1.2em; /* 24px */
-	padding-bottom:1.2em; /* 24px */
 }
 h3{
 	font-size:1.125em; /* 18px */
 	line-height:1.333; /* 24px */
-	/*margin-bottom:1.333em; /* 24px */
-	padding-bottom:1.333em; /* 24px */
 }
 
 /*--- LINKS ---*/
@@ -286,18 +364,14 @@ a:focus{
 
 /*--- LISTS ---*/
 ul,
-ol{
-	margin-left:3em; /* 48px (24px x 2) */
-}
-ul ul,
-ul ol,
-ol ol,
-ol ul{
-	/*margin-bottom:0;*/
-	padding-bottom:0;
-}
+ol,
 dd{
 	margin-left:1.5em; /* 24px */
+}
+li > ul,
+li > ol{
+	/*margin-bottom:0;*/
+	padding-bottom:0;
 }
 
 /* Tags */
@@ -312,13 +386,13 @@ dd{
 }
 
 /* Social links */
-#social{
+.social{
 	margin:0 0 0 -0.75em; /* 12px (24px / 2) */
 }
-#social li{
+.social li{
 	float:left;
 }
-#social a{
+.social a{
 	display:block;
 	width:48px; /* 48px (24px x 2) */
 	height:48px; /* 48px (24px x 2) */
@@ -328,7 +402,7 @@ dd{
 	opacity:0.5;
 	filter:alpha(opacity = 0.5);
 }
-#social a:hover{
+.social a:hover{
 	opacity:1;
 	filter:alpha(opacity = 1);
 }
@@ -344,33 +418,28 @@ dd{
 .rss a			{ background-position:-148px -96px; }
 
 /* Projects */
-#projects h3{
-	/*margin:0;*/
-	padding:0;
+.projects h3{
+	margin-bottom:0;
 }
-#projects a{
+.projects a{
 	display:block;
 	border:none;
 	color:#333;
 }
 
 /* Background image links */
-#images li{
+.images li{
 	display:none;
 }
-#bg-1 #bg-link-1,
-#bg-2 #bg-link-2,
-#bg-3 #bg-link-3,
-#bg-4 #bg-link-4{
+.bg-1 .bg-link-1,
+.bg-2 .bg-link-2,
+.bg-3 .bg-link-3,
+.bg-4 .bg-link-4,
+.bg-5 .bg-link-5{
 	display:list-item;
 }
 
 /*--- OTHER ---*/
-abbr{
-	cursor:help;
-	border-bottom:1px dotted #333;
-	border-color:inherit;
-}
 code{
 	font:1em/1.5 "Inconsolata","Monaco","Consolas","Courier New",Courier,monospace;
 }
@@ -380,11 +449,12 @@ code{
 
 
 /*------------------------------------*\
-	IMAGES
+	$IMAGES
 \*------------------------------------*/
 img{
 	max-width:100%;
 	height:auto;
+    font-style:italic;
 }
 
 
@@ -392,48 +462,7 @@ img{
 
 
 /*------------------------------------*\
-	SHARED
-\*------------------------------------*/
-/*
-Rather than writing properties over and over and repeating code we can simply tether selectors to one rule. This is pretty much having variables in CSS (update the colour once and everything gets the changes).
-*/
-h1,h2,h3,h4,h5,h6,a,a:hover,.go,a:hover .go{
-	color:#597a8f;
-}
-p,
-ul,
-ol,
-dl{
-	/*margin-bottom:1.5em; /* 24px */
-	padding-bottom:1.5em; /* 24px */
-}
-b,
-strong,
-dt{
-	font-weight:700;
-}
-#logo,
-#social a{
-	background-image:url(/img/css/sprite.png);
-}
-.tag-list,
-#images,
-#social,
-#projects{
-	list-style:none;
-}
-.tag-list,
-#images,
-#projects{
-	margin-left:0;
-}
-
-
-
-
-
-/*------------------------------------*\
-	MISC
+	$MISC
 \*------------------------------------*/
 /* Hide things off-screen moce accessibly than display:none; etc. */
 .accessibility{
@@ -453,11 +482,11 @@ html[dir='rtl'] .accessibility{
 
 
 /*------------------------------------*\
-	RESPONSIVE
+	$RESPONSIVE
 \*------------------------------------*/
 /*--- NARROW ---*/
 @media(max-width: 960px){
-#page{
+.page{
 	-moz-column-count:2;
 	-webkit-column-count:2;
 	column-count:2;
@@ -468,16 +497,17 @@ html[dir='rtl'] .accessibility{
 @media(max-width: 640px){
 
 /* Download a smaller background image when viewing on a smaller screen. */
-#bg-1	{ background-image:url(http://farm5.static.flickr.com/4005/4706825697_c0367e6dee_z.jpg); }
-#bg-2	{ background-image:url(http://farm3.static.flickr.com/2741/4281699291_777192cd9f_z.jpg); }
-#bg-3	{ background-image:url(http://farm5.static.flickr.com/4017/4717107886_dcc1270a65_z.jpg); }
-#bg-4	{ background-image:url(http://farm5.static.flickr.com/4116/4877345244_6cf40b2d42_z.jpg); }
+.bg-1	{ background-image:url(http://farm5.static.flickr.com/4005/4706825697_c0367e6dee_z.jpg); }
+.bg-2	{ background-image:url(http://farm3.static.flickr.com/2741/4281699291_777192cd9f_z.jpg); }
+.bg-3	{ background-image:url(http://farm5.static.flickr.com/4017/4717107886_dcc1270a65_z.jpg); }
+.bg-4	{ background-image:url(http://farm5.static.flickr.com/4116/4877345244_6cf40b2d42_z.jpg); }
+.bg-5	{ background-image:url(http://farm7.static.flickr.com/6050/6250747475_bc9f5069a4_z.jpg); }
 
 /* Rework the intro and the logo & tagline to be stacked, not side-by-side. */
 .intro{
 	text-align:center;
 }
-#logo{
+.logo{
 	margin:0 auto 1.5em;
 	background-position:left bottom;
 	float:none;
@@ -488,7 +518,7 @@ html[dir='rtl'] .accessibility{
 }
 
 /* Remove page columns. */
-#page{
+.page{
 	-moz-column-count:auto;
 	-webkit-column-count:auto;
 	column-count:auto;
