@@ -168,11 +168,11 @@
 			<p>Some of the albums I&rsquo;ve been listening to on Spotify lately.</p>
 			
 			<ol>
-				<li><a href=http://open.spotify.com/album/6Nsc0OBWX2M8ldRIV37P0m title="Open with Spotify"><b>Bachelors of Science</b>&mdash;Warehouse Days</a></li>
-				<li><a href=http://open.spotify.com/album/7DmNwRBDJRUEFUlk3oa2Aj title="Open with Spotify"><b>RJD2</b>&mdash;Deadringer: Deluxe</a></li>
-				<li><a href=http://open.spotify.com/album/5F34PzZIEUswKwGQuT7oBL title="Open with Spotify"><b>Wax Tailor</b>&mdash;Tales of the Forgotten Melodies</a></li>
-				<li><a href=http://open.spotify.com/album/5q4bpOVYtyU7Iwlo7r9G4D title="Open with Spotify"><b>Steely Dan</b>&mdash;Showbiz Kids</a></li>
-				<li><a href=http://open.spotify.com/album/2bvcW5af25rV2pL9HBujQO title="Open with Spotify"><b>Nu:Tone</b>&mdash;Brave Nu World</a></li>
+				<li><a href=http://open.spotify.com/album/07iExA8pPReAFXXIIthVsE title="Open with Spotify"><b>Genius/GZA</b>&mdash;<cite>Liquid Swords</cite></a></li>
+				<li><a href=http://open.spotify.com/album/5f6Nz2v1DESbpu1NerEql2 title="Open with Spotify"><b>Gang Starr</b>&mdash;<cite>Moment Of Truth</cite></a></li>
+				<li><a href=http://open.spotify.com/album/5ysxoGFZWIZxDRUghvCBRL title="Open with Spotify"><b>Blakroc</b>&mdash;<cite>Blakroc</cite></a></li>
+				<li><a href=http://open.spotify.com/album/7Az4N94Fc48IJnFP8iUuex title="Open with Spotify"><b>Black Sheep</b>&mdash;<cite>A Wolf In Sheep&rsquo;s Clothing</cite></a></li>
+				<li><a href=http://open.spotify.com/album/12kbNQH6jNy1LgYeoVmnpP title="Open with Spotify"><b>Dan le Sac vs. Scroobius Pip</b>&mdash;<cite>Angles</cite></a></li>
 			</ol>
 			
 			<h2>Eyeballs</h2>
