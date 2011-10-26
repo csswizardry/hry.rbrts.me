@@ -180,11 +180,11 @@
 			<p>A (loose) top five favourite films&hellip; kinda.</p>
 			
 			<ol>
-				<li><a href=http://www.imdb.com/title/tt0398883/ title="View on IMDb">The Consequences of Love</a></li>
-				<li><a href=http://www.imdb.com/title/tt0110413/ title="View on IMDb">Leon: The Professional</a></li>
-				<li><a href=http://www.imdb.com/title/tt0407887/ title="View on IMDb">The Departed</a></li>
-				<li><a href=http://www.imdb.com/title/tt0137523/ title="View on IMDb">Fight Club</a></li>
-				<li><a href=http://www.imdb.com/title/tt0093058/ title="View on IMDb">Full Metal Jacket</a></li>
+				<li><a href=http://www.imdb.com/title/tt0398883/ title="View on IMDb"><cite>The Consequences of Love</cite></a></li>
+				<li><a href=http://www.imdb.com/title/tt0110413/ title="View on IMDb"><cite>Leon: The Professional</cite></a></li>
+				<li><a href=http://www.imdb.com/title/tt0407887/ title="View on IMDb"><cite>The Departed</cite></a></li>
+				<li><a href=http://www.imdb.com/title/tt0137523/ title="View on IMDb"><cite>Fight Club</cite></a></li>
+				<li><a href=http://www.imdb.com/title/tt0093058/ title="View on IMDb"><cite>Full Metal Jacket</cite></a></li>
 			</ol>
 			
 			<p><a href="http://twitter.com/intent/tweet?text=Hey%20@csswizardry,%20check%20out%20">Recommend me some more&hellip;</a></p>
