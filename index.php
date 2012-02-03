@@ -1,22 +1,12 @@
-<?
-	
-	// Set up the amount of possible background images we have.
-	// Feels wrong hard-coding it, but I'm not a PHP dev.
-	$bgImages = 5;
-	
-	// See if someone has set a query string to permalink a specific background image, check it is valid.
-	
-	// first of all let's sanitise any input or default to out-of-range if none present
-	$bg = isset($_GET['bg']) ? intval($_GET['bg']) : 0;
-	
-	// we know $bg is an int one way or the other, so check it's in range and randomise if not
-	if ($bg < 1 || $bg > $bgImages) {
-		$bg = rand(1,$bgImages);
-	}
-	
+<?php
+$backgrounds = array ("http://farm5.static.flickr.com/4005/4706825697_c0367e6dee_b.jpg","http://farm3.static.flickr.com/2741/4281699291_777192cd9f_b.jpg","http://farm5.static.flickr.com/4017/4717107886_dcc1270a65_b.jpg","http://farm5.static.flickr.com/4116/4877345244_6cf40b2d42_b.jpg","http://farm7.static.flickr.com/6050/6250747475_bc9f5069a4_b.jpg"); 
+	function array_random($backgrounds)
+		{
+		echo $backgrounds[array_rand($backgrounds)];
+		}
 ?>
 <!DOCTYPE html>
-<html lang=en class=bg-<?= $bg ?>>
+<html lang=en class=bg>
 <head>
 	<meta charset=UTF-8>
 	<meta name=viewport content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -24,11 +14,15 @@
 
 	<title>hry.rbrts.me&mdash;Harry Roberts; web designer and developer, type nerd and trials rider.</title>
 
-	<link rel=stylesheet href=/css/style.css>
+	<link rel=stylesheet href=css/style.css>
 
 	<link rel="shortcut icon" href=/icon.png>
 	<link rel=apple-touch-icon-precomposed href=/icon.png>
+	<style>
+	.bg { background-image:url(<?php array_random($backgrounds);?>);
+	</style>
 	
+
 	<script src=http://use.typekit.com/ibv5xmv.js></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	
