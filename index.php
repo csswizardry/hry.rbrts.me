@@ -63,7 +63,7 @@
 		</article>
 
 		<article>
-			<p>Hi, I&rsquo;m <b>Harry Roberts</b>. I am a 21 year old web designer, developer, type nerd and trials rider from Leeds, UK. I am currently <b>Senior <abbr title="User Interface">UI</abbr> Developer</b> at BSkyB.</p>
+			<p>Hi, I&rsquo;m <b>Harry Roberts</b>. I am a 21 year old web designer, developer, writer, speaker, type nerd and trials rider from Leeds, UK. I am currently <b>Senior <abbr title="User Interface">UI</abbr> Developer</b> at BSkyB.</p>
 			<p>I share, write and tweet about web development, I am passionate about best practices, ethics and building websites properly, I am on <a href=http://smashingmagazine.com/>Smashing Magazine</a>&rsquo;s Experts Panel and I am a <a href=http://www.thenetawards.com/>.net magazine awards finalist</a>.</p>
 		</article>
 
@@ -95,7 +95,16 @@
 		</article>
 
 		<article>
-			<h2>Writings</h2>
+			<h2>Speaking</h2>
+			
+			<ol>
+                <li><a href=http://thedigitalbarn.co.uk/><s><cite>Digital Barn</cite>&mdash;11 February, 2012. Barnsley, UK</s></a></li>
+                <li><a href=http://2012.front-trends.com/><cite>Front-Trends</cite>&mdash;26&ndash;27 April, 2011. Warsaw, Poland</a></li>
+			</ol>
+		</article>
+
+		<article>
+			<h2>Writing</h2>
 			<p>Handpicked articles of mine&hellip;</p>
 			
 			<ul>
@@ -108,7 +117,6 @@
 				<li><a href=http://csswizardry.com/2011/06/namespacing-fragment-identifiers/>Namespacing fragment identifiers</a></li>
 				<li><a href=http://csswizardry.com/2011/08/building-better-grid-systems/>Building better grid systems</a></li>
 			</ul>
-			
 		</article>
 
 		<article>
@@ -168,12 +176,18 @@
 			<p>Some of the albums I&rsquo;ve been listening to on Spotify lately.</p>
 			
 			<ol>
-				<li><a href=http://open.spotify.com/album/07iExA8pPReAFXXIIthVsE title="Open with Spotify"><b>Genius/GZA</b>&mdash;<cite>Liquid Swords</cite></a></li>
-				<li><a href=http://open.spotify.com/album/5f6Nz2v1DESbpu1NerEql2 title="Open with Spotify"><b>Gang Starr</b>&mdash;<cite>Moment Of Truth</cite></a></li>
-				<li><a href=http://open.spotify.com/album/5ysxoGFZWIZxDRUghvCBRL title="Open with Spotify"><b>Blakroc</b>&mdash;<cite>Blakroc</cite></a></li>
-				<li><a href=http://open.spotify.com/album/7Az4N94Fc48IJnFP8iUuex title="Open with Spotify"><b>Black Sheep</b>&mdash;<cite>A Wolf In Sheep&rsquo;s Clothing</cite></a></li>
-				<li><a href=http://open.spotify.com/album/12kbNQH6jNy1LgYeoVmnpP title="Open with Spotify"><b>Dan le Sac vs. Scroobius Pip</b>&mdash;<cite>Angles</cite></a></li>
+				<li><a href=http://open.spotify.com/album/2j9gluGPzaUvsPI2lDPzYe title="Open with Spotify"><b>High Contrast</b>&mdash;<cite>High Society</cite></a></li>
+				<li><a href=http://open.spotify.com/album/1vOQVL8JAx727LFs3qeiPL title="Open with Spotify"><b>Netsky</b>&mdash;<cite>Netsky</cite></a></li>
+				<li><a href=http://open.spotify.com/album/6KI0SsHIadRnwR1adIsXMl title="Open with Spotify"><b>London Elektricity</b>&mdash;<cite>Syncopated City</cite></a></li>
+				<li><a href=http://open.spotify.com/album/5m1RkwKeU7MV0Ni6PH2lPy title="Open with Spotify"><b>Bonobo</b>&mdash;<cite>Black Sands</cite></a></li>
+				<li><a href=http://sinopticmusic.bandcamp.com/album/lunar-c-the-lunar-cd title="View on Bandcamp"><b>Lunar C</b>&mdash;<cite>The Lunar CD</cite></a></li>
 			</ol>
+			
+			<p><a href=http://open.spotify.com/user/csswizardry>Check me on Spotify&hellip;</a></p>
+			
+		</article>
+		
+		<article>
 			
 			<h2>Eyeballs</h2>
 			
