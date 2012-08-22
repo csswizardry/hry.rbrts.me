@@ -2,7 +2,7 @@
 	
 	// Set up the amount of possible background images we have.
 	// Feels wrong hard-coding it, but I'm not a PHP dev.
-	$bgImages = 5;
+	$bgImages = 6;
 	
 	// See if someone has set a query string to permalink a specific background image, check it is valid.
 	
@@ -70,6 +70,7 @@
 		<article>
 			<h2>Skills and competencies</h2>
 			<ul class=tag-list>
+				<li>Front-end architecture</li>
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>Performance</li>
@@ -99,7 +100,9 @@
 			
 			<ol>
                 <li><a href=http://thedigitalbarn.co.uk/><s><cite>Digital Barn</cite>&mdash;11 February, 2012. Barnsley, UK</s></a></li>
-                <li><a href=http://2012.front-trends.com/><cite>Front-Trends</cite>&mdash;26&ndash;27 April, 2011. Warsaw, Poland</a></li>
+                <li><a href=http://2012.front-trends.com/><s><cite>Front-Trends</cite>&mdash;26&ndash;27 April, 2012. Warsaw, Poland</s></a></li>
+                <li><a href=http://2012.canvasconf.co.uk/><cite>Canvas Conf.</cite>&mdash;7 September, 2012. Birmingham, UK</a></li>
+                <li><a href=http://thedigitalbarn.co.uk/><cite>Digital Barn</cite>&mdash;22 September, 2012. Barnsley, UK</a></li>
 			</ol>
 		</article>
 
@@ -222,6 +225,7 @@
 				<li class=bg-link-3><a href=http://www.flickr.com/photos/suzannahaworth/4717107886/in/set-72157624315456482 title="Me riding trials in Leeds">View background image<span class="accessibility"> three</span></a></li>
 				<li class=bg-link-4><a href=http://www.flickr.com/photos/suzannahaworth/4877345244/in/set-72157624690791690 title="Me climbing Snowdon">View background image<span class="accessibility"> four</span></a></li>
 				<li class=bg-link-5><a href=http://www.flickr.com/photos/suzannahaworth/6250747475/in/set-72157627908888806 title="Me on the summit of Ben Nevis">View background image<span class="accessibility"> four</span></a></li>
+				<li class=bg-link-6><a href=http://www.flickr.com/photos/rachelandrew/6978809052/in/set-72157629925736779 title="Me on stage at Front-Trends 2012">View background image<span class="accessibility"> four</span></a></li>
 			</ul>
 		</article>
 	
