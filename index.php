@@ -132,7 +132,7 @@
 				<li class=dribbble><a href=http://dribbble.com/csswizardry title="Works-in-progress on Dribbble">Dribbble</a></li>
 				<li class=forrst><a href=http://forrst.com/csswizardry title="Odd bits and pieces on Forrst">Forrst</a></li>
 				<li class=google-plus><a href=http://gplus.to/csswizardry title="Add me on Google+">Google+</a></li>
-				<li class=instagram><a href=http://instagrid.me/csswizardry title="My photos on Instagram">Instagram</a></li>
+				<li class=instagram><a href=http://instagram.com/csswizardry title="My photos on Instagram">Instagram</a></li>
 				<li class=zootool><a href=http://zootool.com/user/csswizardry title="Things I bookmark on ZooTool">ZooTool</a></li>
 				<li class=vimeo><a href=http://www.vimeo.com/csswizardry title="My videos on Vimeo">Vimeo</a></li>
 				<li class=youtube><a href=http://www.youtube.com/csswizardry title="My videos on YouTube">YouTube</a></li>
