@@ -63,7 +63,7 @@
 		</article>
 
 		<article>
-			<p>Hi, I&rsquo;m <b>Harry Roberts</b>. I am a 21 year old web designer, developer, writer, speaker, type nerd and trials rider from Leeds, UK. I am currently <b>Senior <abbr title="User Interface">UI</abbr> Developer</b> at BSkyB.</p>
+			<p>Hi, I&rsquo;m <b>Harry Roberts</b>. I am a 22 year old web designer, developer, writer, speaker, type nerd and trials rider from Leeds, UK. I am currently <b>Senior <abbr title="User Interface">UI</abbr> Developer</b> at BSkyB.</p>
 			<p>I share, write and tweet about web development, I am passionate about best practices, ethics and building websites properly, I am on <a href=http://smashingmagazine.com/>Smashing Magazine</a>&rsquo;s Experts Panel and I am a <a href=http://www.thenetawards.com/>.net magazine awards finalist</a>.</p>
 		</article>
 
