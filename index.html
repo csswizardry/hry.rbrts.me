@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="js-page" class="page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <title>hry.rbrts.me</title>
+
+    <script>
+        var page = document.getElementById("js-page");
+        var backgroundImages = 4;
+
+        var backgroundNumber = Math.floor(Math.random() * backgroundImages) + 1;
+
+        page.className = page.className + " page--0" + backgroundNumber;
+    </script>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            -webkit-box-sizing:border-box;
+               -moz-box-sizing:border-box;
+                    box-sizing:border-box;
+        }
+
+        html{
+            background-color:yellow;
+            height:100%;
+            font:100%/1.5 serif;
+        }
+
+        .page       { background-color:blue; }
+        .page--01   { background-color:red; }
+        .page--02   { background-color:green; }
+        .page--03   { background-color:purple; }
+        .page--04   { background-color:orange; }
+
+        body{
+            background-image:url(img/css/dot.gif);
+            background-attachment:fixed;
+            min-height:100%;
+            padding:24px
+        }
+        h1{
+            font-size:48px;
+            font-size:3rem;
+            line-height:1;
+            margin:0;
+            margin-bottom:24px;
+        }
+    </style>
+
 </head>
 <body>
 
