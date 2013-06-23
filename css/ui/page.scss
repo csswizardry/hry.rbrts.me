@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+html{
+    height:100%;
+    font:100%/1.5 serif;
+}
+
+.page{
+    @include vendor(background-size, cover)
+}
+
+.page--01   { background-image:url(../img/css/page/small/01.jpg); background-position:right center; }
+.page--02   { background-image:url(../img/css/page/small/02.jpg); }
+.page--03   { background-image:url(../img/css/page/small/03.jpg); }
+.page--04   { background-image:url(../img/css/page/small/04.jpg); }
+.page--05   { background-image:url(../img/css/page/small/05.jpg); }
+.page--06   { background-image:url(../img/css/page/small/06.jpg); background-position:center center; }
+.page--07   { background-image:url(../img/css/page/small/07.jpg); }
+.page--08   { background-image:url(../img/css/page/small/08.jpg); }
+.page--09   { background-image:url(../img/css/page/small/09.jpg); }
+
+@include media-query(lap-and-up){
+    .page--01   { background-image:url(../img/css/page/large/01.jpg); }
+    .page--02   { background-image:url(../img/css/page/large/02.jpg); }
+    .page--03   { background-image:url(../img/css/page/large/03.jpg); }
+    .page--04   { background-image:url(../img/css/page/large/04.jpg); }
+    .page--05   { background-image:url(../img/css/page/large/05.jpg); }
+    .page--06   { background-image:url(../img/css/page/large/06.jpg); }
+    .page--07   { background-image:url(../img/css/page/large/07.jpg); }
+    .page--08   { background-image:url(../img/css/page/large/08.jpg); }
+    .page--09   { background-image:url(../img/css/page/large/09.jpg); }
+}
+
+body{
+    background-image:url(../img/css/dot.gif);
+    background-attachment:fixed;
+    min-height:100%;
+    padding:$base-spacing-unit;
+}
+
+.content{
+    padding:$base-spacing-unit;
+    max-width:60%;
+    background-color:#fafafa;
+    @include vendor(box-shadow, 5px 5px 0 rgba(0, 0, 0, 0.1));
+}
