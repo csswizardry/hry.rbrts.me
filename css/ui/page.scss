@@ -41,7 +41,6 @@ body{
 
 .content{
     padding:$base-spacing-unit;
-    max-width:60%;
     background-color:#fafafa;
     @include vendor(box-shadow, 5px 5px 0 rgba(0, 0, 0, 0.1));
 }
