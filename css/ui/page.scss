@@ -49,6 +49,7 @@ html{
 }
 
 body{
+    @extend .cf;
     background-image:url(../img/css/dot.gif);
     background-attachment:fixed;
     min-height:100%;
@@ -75,8 +76,19 @@ body{
 .content{
     padding:$base-spacing-unit;
     background-color:#fafafa;
+    @include vendor(box-shadow, 5px 5px 0 rgba(0, 0, 0, 0.1));
+
     @include media-query(desk){
         margin-bottom:100%;
+        max-width:50%
     }
-    @include vendor(box-shadow, 5px 5px 0 rgba(0, 0, 0, 0.1));
+
+    .page--04 &,
+    .page--05 &,
+    .page--07 &{
+        @include media-query(desk){
+            float:right;
+        }
+    }
+
 }
