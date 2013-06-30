@@ -6,6 +6,9 @@ html{
     font:100%/1.5 serif;
 }
 
+/**
+ * Big page backgrounds.
+ */
 .page{
     @include vendor(background-size, cover);
     background-attachment:fixed;
@@ -52,6 +55,23 @@ body{
     padding:$base-spacing-unit;
 }
 
+
+/**
+ * Photo credits
+ */
+.photo-credit{
+    display:none;
+}
+@for $i from 1 through 9{
+    .page--0#{$i} .photo-credit--0#{$i}{
+        display:list-item;
+    }
+}
+
+
+/**
+ * Main content area
+ */
 .content{
     padding:$base-spacing-unit;
     background-color:#fafafa;
