@@ -7,7 +7,8 @@ html{
 }
 
 .page{
-    @include vendor(background-size, cover)
+    @include vendor(background-size, cover);
+    background-attachment:fixed;
 }
 
 .page--01   { background-image:url(../img/css/page/small/01.jpg); background-position:right center; }
@@ -54,5 +55,8 @@ body{
 .content{
     padding:$base-spacing-unit;
     background-color:#fafafa;
+    @include media-query(desk){
+        margin-bottom:100%;
+    }
     @include vendor(box-shadow, 5px 5px 0 rgba(0, 0, 0, 0.1));
 }
