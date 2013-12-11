@@ -80,13 +80,13 @@
         }
 
         a {
-            color: #f43059;
+            color: #9f102e;
             text-decoration: none;
         }
 
-            a:hover {
-                text-decoration: underline;
-            }
+        a:hover {
+            text-decoration: underline;
+        }
 
         /**
          * Page’s bounding box.
@@ -103,6 +103,56 @@
             border-left-color: rgba(255, 255, 255, 0.25);
             border-radius: 1px;
             box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        /**
+         * Call to action.
+         */
+        .cta {
+            font: 0.666666667rem/2 sans-serif;
+            word-spacing: 2em;
+            text-align: center;
+        }
+
+            .cta__or {
+                display: block;
+                line-height: 4;
+            }
+            
+            @media screen and (min-width: 720px) {
+
+                .cta__or {
+                    display: inline;
+                    line-height: 2;
+                }
+
+            }
+
+        /**
+         * Buttons.
+         */
+        .btn {
+            display: inline-block;
+            vertical-align: middle;
+            word-spacing: normal;
+            padding: 12px 24px;
+            background-color: #9f102e;
+            color: #fff;
+            border-radius: 1px;
+        }
+
+        .btn,
+        .btn:hover {
+            text-decoration: none;
+        }
+
+        .btn--hire {
+            padding: 24px 48px;
+            background-color: #3f990f;
+        }
+
+        .hidden {
+            display: none !important;
         }
 
     </style>
@@ -129,9 +179,11 @@
         websites.
     </p>
 
-    <p>
-        <a href="http://csswizardry.com/about/">Learn more</a> or
-        <a href="http://csswizardry.com/work/">hire me</a>.
+    <p class="cta">
+        <a href="http://csswizardry.com/about/" class="btn">Learn more</a>
+        <span class="cta__or">or</span>
+        <a href="http://csswizardry.com/work/" class="btn  btn--hire">hire
+            me</a><span class="hidden">.</span>
     </p>
 
 </div>
