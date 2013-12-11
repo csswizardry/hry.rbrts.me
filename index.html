@@ -10,8 +10,106 @@
     <link rel="apple-touch-icon-precomposed" href="icon.png">
     <meta name="apple-mobile-web-app-title" content="">
     <link type="text/plain" rel="author" href="humans.txt">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <style>
+
+        /**
+         * Quick and dirty reset.
+         */
+        * {
+            margin:  0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+
+        h1, p {
+            margin-bottom: 24px;
+            margin-bottom: 1.3333333rem;
+        }
+
+        /**
+         * 1. 18px font-size with a 24px line-height.
+         */
+        html {
+            font: 1.125em/1.3333333 "Roboto Slab", serif; /* [1] */
+            min-height: 100%;
+            padding: 5%;
+            overflow-y: scroll;
+            background: url(img/css/background--small.jpg) center center scroll no-repeat #305d99;
+            -webkit-background-size: cover;
+               -moz-background-size: cover;
+                    background-size: cover;
+        }
+
+        @media screen and (min-width: 480px) {
+
+            html    { background-image: url(img/css/background--medium.jpg); }
+
+        }
+
+        @media screen and (min-width: 720px) {
+
+            html    { background-image: url(img/css/background--large.jpg); }
+
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            html    { background-image: url(img/css/background--huge.jpg); }
+
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-size: 1.3333333rem;
+            line-height: 1;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        @media screen and (min-width: 720px) {
+
+            h1 {
+                font-size: 48px;
+                font-size: 3rem;
+            }
+
+        }
+
+        a {
+            color: #f43059;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        /**
+         * Page’s bounding box.
+         */
+        .page {
+            padding: 24px;
+            padding-bottom: 0;
+            max-width: 40em;
+            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.75);
+            color: #333;
+            border: 1px solid transparent;
+            border-top-color:  rgba(255, 255, 255, 0.25);
+            border-left-color: rgba(255, 255, 255, 0.25);
+            border-radius: 1px;
+            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+        }
+
+    </style>
 </head>
 <body>
+
+<div class="page">
 
     <h1>Harry Roberts – Consultant Front-end Architect</h1>
 
@@ -35,6 +133,8 @@
         <a href="http://csswizardry.com/about/">Learn more</a> or
         <a href="http://csswizardry.com/work/">hire me</a>.
     </p>
+
+</div>
 
 </body>
 </html>
