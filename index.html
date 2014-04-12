@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon-precomposed" href="icon.png">
     <meta name="apple-mobile-web-app-title" content="">
     <link type="text/plain" rel="author" href="humans.txt">
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 
     <style>
 
@@ -26,19 +26,21 @@
         }
 
         h1, p {
-            margin-bottom: 24px;
-            margin-bottom: 1.3333333rem;
+            margin-bottom: 27px;
+            margin-bottom: 1.5rem;
         }
 
         /**
          * 1. 18px font-size with a 24px line-height.
          */
         html {
-            font: 1.125em/1.3333333 "Roboto Slab", serif; /* [1] */
+            font: 300 1.125em/1.5 "Roboto Slab", serif; /* [1] */
             min-height: 100%;
             padding: 5%;
             overflow-y: scroll;
+            text-align: center;
             background: url(img/css/background--small.jpg) center center scroll no-repeat #305d99;
+            color: #fff;
             -webkit-background-size: cover;
                -moz-background-size: cover;
                     background-size: cover;
@@ -62,61 +64,53 @@
 
         }
 
+        body {
+            max-width: 50em;
+            margin: 0 auto;
+        }
+
         h1 {
-            font-family: sans-serif;
             font-size: 24px;
             font-size: 1.3333333rem;
-            line-height: 1;
+            line-height: 1.125;
             text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.5);
         }
 
         @media screen and (min-width: 720px) {
 
             h1 {
-                font-size: 48px;
+                font-size: 54px;
                 font-size: 3rem;
+                line-height: 1;
             }
 
         }
 
         a {
-            color: #9f102e;
+            outline: none;
+            color: inherit;
             text-decoration: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            -webkit-transition: 0.2s;
+               -moz-transition: 0.2s;
+                    transition: 0.2s;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /**
-         * Page’s bounding box.
-         */
-        .page {
-            padding: 24px;
-            padding-bottom: 0;
-            max-width: 40em;
-            background-color: #fff;
-            background-color: rgba(255, 255, 255, 0.75);
-            color: #333;
-            border: 1px solid transparent;
-            border-top-color:  rgba(255, 255, 255, 0.25);
-            border-left-color: rgba(255, 255, 255, 0.25);
-            border-radius: 1px;
-            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+        a:hover,
+        a:focus {
+            border-bottom-color: #fff;
         }
 
         /**
          * Call to action.
          */
         .cta {
-            font: 0.666666667rem/2 sans-serif;
             word-spacing: 2em;
-            text-align: center;
         }
 
             .cta__or {
                 display: block;
-                line-height: 4;
+                line-height: 4.5;
             }
             
             @media screen and (min-width: 720px) {
@@ -135,20 +129,25 @@
             display: inline-block;
             vertical-align: middle;
             word-spacing: normal;
-            padding: 12px 24px;
-            background-color: #9f102e;
+            padding: 13px 24px;
             color: #fff;
-            border-radius: 1px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            -webkit-transition: 0.2s;
+               -moz-transition: 0.2s;
+                    transition: 0.2s;
         }
 
-        .btn,
-        .btn:hover {
-            text-decoration: none;
+        .btn:hover,
+        .btn:focus {
+            border-color: #fff;
         }
 
-        .btn--hire {
-            padding: 24px 48px;
-            background-color: #3f990f;
+        .btn--large {
+            padding: 25px 52px;
+        }
+
+        .break {
+            display: block !important;
         }
 
         .hidden {
@@ -159,34 +158,30 @@
 </head>
 <body>
 
-<div class="page">
+<h1><span class="break">Harry Roberts:</span> Consultant Front-end Architect</h1>
 
-    <h1>Harry Roberts – Consultant Front-end Architect</h1>
+<p>
+    Hi there, I’m Harry. I am a Consultant Front-end Architect, designer,
+    developer, writer and speaker from the UK. I help teams across the world
+    to write better, more scalable, more maintainable, and more considered
+    CSS for today’s Web. I am available for hire.
+</p>
 
-    <p>
-        Hi there, I’m Harry. I am a Consultant Front-end Architect, designer,
-        developer, writer and speaker from the UK. I help teams across the world
-        to write better, more scalable, more maintainable, and more considered
-        CSS for today’s Web. I am available for hire.
-    </p>
+<p>
+    I <a href="http://csswizardry.com">write</a>,
+    <a href="https://twitter.com/csswizardry">Tweet</a>, and
+    <a href="http://csswizardry.com/speaking/">speak</a> about—and run
+    <a href="http://csswizardry.com/speaking/">workshops</a> covering—CSS,
+    and its scalability and architecture for big teams working on big
+    websites.
+</p>
 
-    <p>
-        I <a href="http://csswizardry.com">write</a>,
-        <a href="https://twitter.com/csswizardry">Tweet</a>, and
-        <a href="http://csswizardry.com/speaking/">speak</a> about—and run
-        <a href="http://csswizardry.com/speaking/">workshops</a> covering—CSS,
-        and its scalability and architecture for big teams working on big
-        websites.
-    </p>
-
-    <p class="cta">
-        <a href="http://csswizardry.com/about/" class="btn">Learn more</a>
-        <span class="cta__or">or</span>
-        <a href="http://csswizardry.com/work/" class="btn  btn--hire">hire
-            me</a><span class="hidden">.</span>
-    </p>
-
-</div>
+<p class="cta">
+    <a href="http://csswizardry.com/about/" class="btn">Learn more</a>
+    <span class="cta__or">or</span>
+    <a href="http://csswizardry.com/work/" class="btn  btn--large">hire
+        me</a><span class="hidden">.</span>
+</p>
 
 </body>
 </html>
